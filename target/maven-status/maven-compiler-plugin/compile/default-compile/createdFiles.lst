@@ -1,0 +1,6 @@
+br\rodolfo\vilaca\dto\Product.class
+br\rodolfo\vilaca\model\Product.class
+br\rodolfo\vilaca\webservice\CORSFilter.class
+br\rodolfo\vilaca\webservice\ProductWS.class
+br\rodolfo\vilaca\webservice\ProductWSImpl$1.class
+br\rodolfo\vilaca\webservice\ProductWSImpl.class

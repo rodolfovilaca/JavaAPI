@@ -1,0 +1,58 @@
+<html>
+  <head>
+      <script src="jsApiFunctions.js"></script>
+      <link rel="stylesheet" type="text/css" href="jsApiClient.css">
+      <div id="tab" class="tab">
+        <button class="tablinks" onclick="openTab(event,'get')">GET</button>
+        <button class="tablinks" onclick="openTab(event, 'post')">POST</button>
+        <button class="tablinks" onclick="openTab(event, 'put')">PUT</button>
+        <button class="tablinks" onclick="openTab(event, 'delete')">DELETE</button>
+      </div>
+  </head>
+  <body>
+      <div id="get" class="tabcontent">
+        <h3>GET</h3>
+        <p>
+            <button id="getAll" onclick="getAllObjects()">getAllObjects</button>
+            <button onclick="getFirstObject()">getFirstObject</button>       
+        </p>    
+      </div>
+
+      <div id="post" class="tabcontent">
+        <h3>POST</h3>
+        <p>
+            <form action="/action_page.php">
+                Product ID:<br>
+                <input id="post_id" type="number" name="productName" value=""><br>
+                Product Name:<br>
+                <input id="post_name" type="text" name="productName" value=""><br>
+                Product Price:<br>
+                <input id="post_price" type="number" step="0.01" name="producPrice" value=""><br><br>
+                Product Description:<br>
+                <input id="post_description" type="text" name="productName" value=""><br>
+                Product Quantity:<br>
+                <input id="post_quantity" type="number" name="productName" value=""><br>
+            </form>
+            <button onclick="postObject()">postObject</button>
+        </p> 
+      </div>
+
+      <div id="put" class="tabcontent">
+        <h3>PUT</h3>
+        <p>
+            <button onclick="updateObject()">updateObject</button>
+        </p>
+      </div>
+      
+      <div id="delete" class="tabcontent">
+        <h3>DELETE</h3>
+        <p>
+            <form action="/action_page.php">
+                Product ID:<br>
+                <input id="delete_id" type="number" name="ID" value=""><br>
+            </form>
+            <button onclick="deleteObject()">deleteObject</button>
+        </p>
+      </div>
+    </body>
+</html>
